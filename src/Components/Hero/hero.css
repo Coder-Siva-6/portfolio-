@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+.text-container{
+    @apply flex flex-col  md:items-start gap-5 justify-between 
+}
+.text-container>div>h2{
+    @apply md:text-xl 2xl:text-2xl font-semibold text-shadow-gray-300  text-white text-sm
+}
+.text-container>div>h1{
+    @apply text-3xl md:text-5xl w-[70%] 2xl:text-6xl text-shadow-gray-300 font-bold tracking-wider  bg-clip-text text-transparent   bg-linear-[45deg,red,blue]
+}
+.text-container>div>h3{
+    @apply text-sm md:text-xl   text-shadow-gray-300 font-bold tracking-wider text-white
+}
+.text-container>div>h3>span{
+    @apply text-blue-600  text-xl md:text-2xl 
+}
+.text-container>div>p{
+    @apply text-white tracking-wide md:max-w-[85%] md:text-sm text-xs text-justify md:text-start 
+}
+.imgdiv{
+    @apply size-80 md:size-100 2xl:h-120 2xl:w-120   md:shadow-2xl shadow-[aqua] rounded-full relative translate-y-5 ;
+    
+
+}
+.img{
+    @apply bg-no-repeat   2xl:h-120 2xl:w-120  -translate-y-19  scale-115 md:scale-117 2xl:scale-115 rounded-b-full    absolute outline-0 ;
+    
+   
+ 
+   
+    filter: drop-shadow(15px 2px 25px  rgba(13, 149, 194, 0.555));
+    
+    
+}
+
+
+.img_style{
+    @apply size-80 md:size-100 2xl:h-120 2xl:w-120    rounded-b-full    bg-gradient-to-b from-transparent to-black to-79% absolute border-b-4 ;
+    clip-path: circle(49.6% at 50% 50%);
+    top:0;
+    left:0;
+    z-index:10;
+    box-shadow:inset 0px -30px 20px 0px rgb(0, 0, 0);
+   
+}
+
+
+
+/*............................... LOGO SECTION ................................ */
+.logo{
+    @apply flex gap-2 2xl:gap-3
+}
+.logos{
+    @apply text-white hover:text-blue-600  text-xl 2xl:text-2xl
+}
+
+
+/*..............................................SKILLS............................................ */
+.skill_logo>div>img{
+    @apply size-7 2xl:size-8 animate-pulse ;
+
+
+}
+
+
+
+.profile::before{
+    @apply absolute size-105 left-[50%] -translate-x-[50%] top-[50%] -translate-y-[50%] 2xl:size-108 rounded-full border-2 border-blue-600     bg-gradient-to-tr from-blue-400 to-blue-600 blur-2xl opacity-70;
+    content:'';
+    z-index:-1;
+   
+}

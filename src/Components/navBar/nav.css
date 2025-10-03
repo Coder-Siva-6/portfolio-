@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+.navbar{
+    @apply  flex   justify-center w-full container mx-auto fixed mt-0 z-10    py-1 bg-black  backdrop-blur-lg border-b border-gray-700 shadow-lg
+}
+.navbar>nav{
+    @apply flex justify-between items-center w-[100%] mx-5 px-5  outline-0       
+}
+.navbar>nav>h1{
+    @apply text-3xl lg:text-2xl 2xl:text-3xl w-fit p-3 text-transparent bg-clip-text bg-linear-[45deg,red,blue] 
+}
+.pc{
+    @apply   items-center   gap-5 2xl:gap-10 
+}
+
+
+.navbar>nav>ul>a>li{
+    @apply tracking-wide text-[12px] font-semibold  p-2 text-gray-300 hover:bg-gradient-to-br from-blue-500 to-[aqua] relative hover:text-transparent bg-clip-text ; 
+   
+}
+.navbar>nav>ul>a>li::before{
+  @apply border-b-2 ;
+  position: absolute;
+  background-color:aqua;
+  bottom: 7px;
+  content: '';
+  width:0;
+  height: 0.5px;
+  z-index: 100;
+  transition: all 0.5s;
+}
+.navbar>nav>ul>a>li:hover::before{
+
+    width: 80%;
+}

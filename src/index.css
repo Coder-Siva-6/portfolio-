@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Engagement&display=swap');
+@import "tailwindcss";
+
+@theme{
+   --font-roboto:"Roboto", sans-serif;
+   --font-inter:"Inter", sans-serif;
+   --font-robotosalb:"Roboto Slab", serif;
+   --font-engagement: "Engagement", cursive;
+
+}
+.title_text{
+   @apply text-2xl md:text-4xl font-bold text-white font-robotosalb tracking-wide;
+
+}
+.paragraph_text{
+   @apply text-sm md:text-lg 2xl:text-xl font-semibold text-gray-500;
+}
